@@ -10,6 +10,9 @@ namespace MemoryGame
     {
         static void Main(string[] args)
         {
+            Console.SetWindowSize(78, 50);
+            GameBackground.Logo();
+            GameManager.Menu();
         }
     }
 }
