@@ -87,7 +87,7 @@ namespace MemoryGame
 
         }
 
-        public static void SaveScore()
+        public static void SaveScore(Player player)
         {
 
         }

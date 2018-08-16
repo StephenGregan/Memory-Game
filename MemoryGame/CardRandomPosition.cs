@@ -16,7 +16,7 @@ namespace MemoryGame
             Random randomGeneator = new Random();
             List<CardFace> gameCard = new List<CardFace>();
             int allCard = dimentionZero * dimentionOne;
-            int currentDameCardPair = allcard / pair;
+            int currentDameCardPair = allCard / pair;
             string[] cardName = new string[pairCount] { "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine" };
 
             for (int element = 0, j = 0; element < allCard; element++, j++)

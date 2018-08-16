@@ -43,7 +43,19 @@ namespace MemoryGame
             Console.ForegroundColor = ConsoleColor.DarkYellow;
             Console.SetCursorPosition(31, 27);
             Console.WriteLine("Current Highscores");
-            HighScores
+            HighScores.Read();
+
+            Console.WriteLine("\n");
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.SetCursorPosition(27, 44);
+            Console.WriteLine("Press any key to return.");
+            Console.SetCursorPosition(28, 45);
+            Console.WriteLine("     ...     ");
+            Console.SetCursorPosition(39, 46);
+
+            Console.ReadLine();
+            GameBackground.CleanBackground();
+            GameManager.Menu();
         }
     }
 }

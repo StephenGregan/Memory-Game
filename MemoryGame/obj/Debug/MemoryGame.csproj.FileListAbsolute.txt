@@ -1,2 +1,6 @@
-C:\Users\Ronan\source\repos\MemoryGame\MemoryGame\obj\Debug\MemoryGame.csprojResolveAssemblyReference.cache
 C:\Users\Ronan\source\repos\MemoryGame\MemoryGame\obj\Debug\MemoryGame.csproj.CoreCompileInputs.cache
+C:\Users\Ronan\source\repos\MemoryGame\MemoryGame\bin\Debug\MemoryGame.exe.config
+C:\Users\Ronan\source\repos\MemoryGame\MemoryGame\bin\Debug\MemoryGame.exe
+C:\Users\Ronan\source\repos\MemoryGame\MemoryGame\bin\Debug\MemoryGame.pdb
+C:\Users\Ronan\source\repos\MemoryGame\MemoryGame\obj\Debug\MemoryGame.exe
+C:\Users\Ronan\source\repos\MemoryGame\MemoryGame\obj\Debug\MemoryGame.pdb

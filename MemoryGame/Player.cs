@@ -12,7 +12,7 @@ namespace MemoryGame
     {
         public string Name { get; set; }
         public int Score { get; set; }
-        public int SuccessCoEfficient { get; set }
+        public int SuccessCoEfficient { get; set; }
 
         public Player(string name)
         {
