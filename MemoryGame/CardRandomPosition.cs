@@ -32,7 +32,7 @@ namespace MemoryGame
                 for (int column = 0; column < dimentionOne; column++)
                 {
                     int randomElement = randomGeneator.Next(0, gameCard.Count);
-                    cardFace[column, row] = gameCard[randomElement];
+                    cardFace[row, column] = gameCard[randomElement];
                     gameCard.RemoveAt(randomElement);
                 }
             }
@@ -47,7 +47,7 @@ namespace MemoryGame
             {
                 for (int column = 0; column < cardBack.GetLength(1); column++)
                 {
-                    cardBack[column, row] = new CardBack();
+                    cardBack[row, column] = new CardBack();
                 }
             }
             return cardBack;

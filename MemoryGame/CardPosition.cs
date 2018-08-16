@@ -41,7 +41,7 @@ namespace MemoryGame
                 { new CardPosition(2, 37), new CardPosition(15, 37), new CardPosition(28, 37), 
                 new CardPosition(41, 37), new CardPosition(54, 37), new CardPosition(67, 37) }
             };
-            return Positions[column, row];
+            return Positions[row, column];
         }
     }
 }

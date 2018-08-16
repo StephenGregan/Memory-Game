@@ -221,8 +221,8 @@ namespace MemoryGame
             {
                 for (int column = 0; column < this.CardBack.GetLength(1); column++)
                 {
-                    this.CardBack[column, row].DrawSelf(column, row);
-                    this.CardFace[column, row].DrawSelf(column, row);
+                    this.CardBack[row, column].DrawSelf(row, column);
+                    this.CardFace[row, column].DrawSelf(row, column);
                 }
             }
         }
