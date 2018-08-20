@@ -17,7 +17,7 @@ namespace MemoryGame
             this.IsVisible = false;
         }
 
-        public override void DrawSelf(int column, int row)
+        public override void DrawSelf(int row, int column)
         {
             if (IsVisible)
             {
@@ -26,45 +26,45 @@ namespace MemoryGame
             }
         }
 
-            public void Print(CardPosition topLeft)
+        public void Print(CardPosition topLeft)
+        {
+            if (this.CardName == "One")
             {
-                if (this.CardName == "One")
-                {
                 PrintCardOne(topLeft);
-                }
-                else if (this.CardName == "Two")
-                {
-                PrintCardTwo(topLeft);
-                }
-                else if (this.CardName == "Three")
-                {
-                PrintCardThree(topLeft);
-                }
-                else if (this.CardName == "Four")
-                {
-                PrintCardFour(topLeft);
-                }
-                else if (this.CardName == "Five")
-                {
-                PrintCardFive(topLeft);
-                }
-                else if (this.CardName == "Six")
-                {
-                PrintCardSix(topLeft);
-                }
-                else if (this.CardName == "Seven")
-                {
-                PrintcardSeven(topLeft);
-                }
-                else if (this.CardName == "Eight")
-                {
-                PrintCardEight(topLeft);
-                }
-                else
-                {
-                PrintCardNine(topLeft);
-                }
             }
+            else if (this.CardName == "Two")
+            {
+                PrintCardTwo(topLeft);
+            }
+            else if (this.CardName == "Three")
+            {
+                PrintCardThree(topLeft);
+            }
+            else if (this.CardName == "Four")
+            {
+                PrintCardFour(topLeft);
+            }
+            else if (this.CardName == "Five")
+            {
+                PrintCardFive(topLeft);
+            }
+            else if (this.CardName == "Six")
+            {
+                PrintCardSix(topLeft);
+            }
+            else if (this.CardName == "Seven")
+            {
+                PrintCardSeven(topLeft);
+            }
+            else if (this.CardName == "Eight")
+            {
+                PrintCardEight(topLeft);
+            }
+            else
+            {
+                PrintCardNine(topLeft);
+            }
+        }
 
         public static bool operator ==(CardFace firstCardFace, CardFace secondCardFace)
         {
@@ -81,6 +81,16 @@ namespace MemoryGame
         public static bool operator !=(CardFace firstCardFace, CardFace secondCardFace)
         {
             return !(firstCardFace == secondCardFace);
+        }
+
+        public override bool Equals(object obj)
+        {
+            return base.Equals(obj);
+        }
+
+        public override int GetHashCode()
+        {
+            return base.GetHashCode();
         }
 
         #region Card One
@@ -628,7 +638,7 @@ namespace MemoryGame
         #endregion
 
         #region Card Seven
-        public static void PrintcardSeven(CardPosition topLeft)
+        public static void PrintCardSeven(CardPosition topLeft)
         {
             Console.SetCursorPosition(topLeft.X, topLeft.Y);
             topLeft.Y++;

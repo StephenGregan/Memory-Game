@@ -32,11 +32,11 @@ namespace MemoryGame
             info.AddValue("TopLeft", this.TopLeft);
         }
 
-        public override void DrawSelf(int column, int row)
+        public override void DrawSelf(int row, int column)
         {
             if (IsVisible)
             {
-                CardPosition position = CardPosition.GeneratePosition(column, row);
+                CardPosition position = CardPosition.GeneratePosition(row, column);
                 this.TopLeft = position;
                 Print(position);
             }

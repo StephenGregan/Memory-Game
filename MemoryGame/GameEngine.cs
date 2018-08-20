@@ -116,7 +116,9 @@ namespace MemoryGame
                 CardPosition secondCard = Check[1];
                 this.CardFace[secondCard.X, secondCard.Y].IsVisible = true;
                 this.CardBack[secondCard.X, secondCard.Y].IsVisible = false;
+
                 Refresh();
+
                 if (this.CardFace[firstCard.X, firstCard.Y] != this.CardFace[secondCard.X, secondCard.Y])
                 {
                     this.CardFace[firstCard.X, firstCard.Y].IsVisible = false;
@@ -130,6 +132,7 @@ namespace MemoryGame
                 {
                     this.Player.Score += this.Player.SuccessCoEfficient > 0 ? point * this.Player.SuccessCoEfficient : point;
                     PrintPlayerInfo("Success");
+
                     if (CheckForGameEnd())
                     {
                         if (this.Level < maxLevel)
@@ -170,6 +173,7 @@ namespace MemoryGame
                     sumOfVisibleCard++;
                 }
             }
+
             if (sumOfVisibleCard == CardFace.GetLength(0) * CardFace.GetLength(1))
             {
                 return true;
@@ -259,8 +263,7 @@ namespace MemoryGame
                     Console.ForegroundColor = ConsoleColor.Red;
                     Console.Write("-");
                 }
-            }
-            
+            }    
         }
     }
 }
